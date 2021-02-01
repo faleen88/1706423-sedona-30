@@ -34,6 +34,7 @@
 
 --special-black: #231F20;
 --special-pepel: #BDBBBC;
+--special-background: #808080;
 }
 
 /* Global */
@@ -100,7 +101,7 @@ img {
 /* Invitation */
 
 .invitation {
-  background-color: gray;
+  background-color: var(--special-background);
   width: 1200px;
   height: 509px;
 }
@@ -253,6 +254,51 @@ img {
   background-color: var(--basic-dark-sky);
   outline: none;
 }
+
+.filter-button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border: var(--basic-white);
+}
+
+.filter-button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Catalog */
+
+/* Filters */
+
+.filters {
+  background-color: var(--special-background);
+  color: var(--basic-white);
+  width: 1200px;
+  height: 400px; /* поменять потом на 217px*/
+}
+
+.image {
+  background-image: url(../img/background.png);
+  background-repeat:no-repeat;
+  width: 1200px;
+  height: 217px;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+
 
 /* Main-footer */
 
