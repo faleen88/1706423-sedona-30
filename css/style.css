@@ -117,7 +117,7 @@ img {
 }
 
 .shape {
-  background-image: url(../img/Shape.png);
+  background-image: url(../img/shape.png);
   background-repeat:no-repeat;
   background-position: bottom ;
   width: 1200px;
