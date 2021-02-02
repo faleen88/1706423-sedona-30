@@ -35,6 +35,9 @@
 --special-black: #231F20;
 --special-pepel: #BDBBBC;
 --special-background: #808080;
+--special-icone-dir: #CACACA;
+--special-rating: #666666;
+--special-bg-rating: #F2F2F2;
 }
 
 /* Global */
@@ -262,7 +265,6 @@ img {
   font-weight: 400;
   color: var(--basic-white);
   text-transform: uppercase;
-  border: var(--basic-white);
 }
 
 .filter-button:hover {
@@ -270,7 +272,31 @@ img {
   background-color: var(--basic-white);
 }
 
-/* Catalog */
+.button-product {
+  color: var(--basic-white);
+  background-color: var(--basic-light-sky);
+}
+
+.button-product:hover {
+  background-color: var(--basic-sky);
+}
+
+.button-product:active {
+  background-color: var(--basic-dark-sky);
+}
+
+.button-reservation {
+  color: var(--basic-white);
+  background-color: var(--basic-light-ground);
+}
+
+.button-reservation:hover {
+  background-color: var(--basic-ground);
+}
+
+.button-reservation:active {
+  background-color: var(--basic-dark-ground);
+}
 
 /* Filters */
 
@@ -298,7 +324,101 @@ img {
   list-style: none;
 }
 
+/* Catalog */
 
+/* Sorting */
+
+.sorting span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting h3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list a {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-light-sky);
+}
+
+.sorting-list a:hover {
+  color: var(--basic-light-sky);
+  opacity: 1;
+}
+
+.sorting-list a:focus {
+  color: var(--basic-light-sky);
+  border-bottom: none;
+  opacity: 1;
+}
+
+.sorting-list a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+  opacity: 1;
+}
+
+.sorting-current {
+  color: var(--basic-light-sky);
+}
+
+/* Sorting-icone */
+
+.icone-up {
+  fill: var(--special-icone-dir);
+}
+
+.icone-up:hover {
+  fill: var(--basic-black);
+}
+
+.icone-up:focus,
+.icone-up:active {
+  fill: var(--basic-light-sky);
+}
+
+.icone-down {
+  fill: var(--basic-light-sky);
+}
+
+/* Catalog-list */
+
+.catalog-list {
+  list-style: none;
+}
+
+.heading a {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.heading a:hover {
+  color: var(--basic-light-sky);
+}
+
+.heading a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-item span {
+ color: var(--special-rating);
+ background-color: var(--special-bg-rating);
+}
 
 /* Main-footer */
 
