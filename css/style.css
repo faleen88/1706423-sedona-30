@@ -343,13 +343,19 @@ img {
   background-color: var(--basic-dark-ground);
 }
 
+/* Page-catalog */
+
+.page-catalog {
+  text-align: left;
+}
+
 /* Filters */
 
 .filters {
   background-color: var(--special-background);
   color: var(--basic-white);
   width: 1200px;
-  height: 400px; /* поменять потом на 217px*/
+  height: 217px;
 }
 
 .image {
@@ -357,6 +363,12 @@ img {
   background-repeat:no-repeat;
   width: 1200px;
   height: 217px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 254px auto max-content;
+  margin: 0 73px;
 }
 
 .filter legend {
@@ -372,6 +384,10 @@ img {
 /* Catalog */
 
 /* Sorting */
+
+.sorting {
+  border-bottom: 1px solid var(--basic-border-pepel);
+}
 
 .sorting span {
   font-size: 21px;
@@ -441,6 +457,14 @@ img {
 
 .catalog-list {
   list-style: none;
+}
+
+.catalog-item {
+  display: grid;
+  grid-template-columns: 135px auto max-content;
+  margin: 0 70px;
+  padding: 0;
+  border-bottom: 1px solid var(--basic-border-pepel);
 }
 
 .heading a {
