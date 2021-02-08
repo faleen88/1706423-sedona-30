@@ -182,12 +182,6 @@ img {
   padding: 0;
 }
 
-.advantage h3{
-  font-size: 21px;
-  margin: 0 100px;
-  padding-top: 45px;
-}
-
 /* Features */
 
 .features-list {
@@ -217,13 +211,24 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  min-height: 256px;
   list-style: none;
 }
 
+.advantage p,
+.advantage-item p {
+  margin: 25px 45px;
+}
+
+.advantage-item p {
+  padding: 0 26px;
+}
+
+.advantage h3,
 .advantage-item h3 {
   font-size: 21px;
-  margin: 0 130px;
-  padding-top: 45px;
+  margin: 0 125px;
+  margin-top: 47px;
 }
 
 /* Search */
@@ -310,6 +315,8 @@ img {
   font-weight: 400;
   color: var(--basic-white);
   text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
 }
 
 .filter-button:hover {
@@ -462,7 +469,7 @@ img {
 .catalog-item {
   display: grid;
   grid-template-columns: 135px auto max-content;
-  margin: 0 70px;
+  margin: 0;
   padding: 0;
   border-bottom: 1px solid var(--basic-border-pepel);
 }
