@@ -192,12 +192,17 @@ img {
   list-style: none;
 }
 
+.feature-item {
+  margin-top: 60px;
+  margin-bottom: 57px;
+}
+
 .feature-item h4 {
   font-size: 21px;
 }
 
 .feature-item p {
-  margin: 30px;
+  margin: 25px 50px;
 }
 
 /* Advantages-3-4-5 */
@@ -498,6 +503,14 @@ img {
 
 /* Main-footer */
 
+.main-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* Contacts */
 
 .contacts {
@@ -505,6 +518,8 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: inherit;
+  margin-left: 73px;
+  width: 327px;
 }
 
 .hashtag, .phone {
@@ -531,6 +546,11 @@ img {
 }
 
 /* Footer-copyright */
+
+.footer-copyright {
+  margin-right: 73px;
+  width: 327px;
+}
 
 .logo-icone {
   fill: var(--special-black);
