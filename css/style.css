@@ -35,7 +35,7 @@
 --special-black: #231F20;
 --special-pepel: #BDBBBC;
 --special-background: #808080;
---special-icone-dir: #CACACA;
+--special-sorting-icone: #CACACA;
 --special-rating: #666666;
 --special-bg-rating: #F2F2F2;
 }
@@ -318,10 +318,13 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  width: 137px;
+  height: 36px;
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
 }
 
 .filter-button:hover {
@@ -398,6 +401,9 @@ img {
 /* Sorting */
 
 .sorting {
+  display: flex;
+  align-items: center;
+  height: 86px;
   border-bottom: 1px solid var(--basic-border-pepel);
 }
 
@@ -405,21 +411,30 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-left: 73px;
+  margin-right: 46px;
 }
 
 .sorting h3 {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin-right: 40px;
+  margin-top: 5px;
 }
 
 .sorting-list {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 5px;
+  padding: 0;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sorting-list a {
+  margin-left: 33px;
   color: var(--basic-black);
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-light-sky);
@@ -446,22 +461,24 @@ img {
   color: var(--basic-light-sky);
 }
 
-/* Sorting-icone */
+/* Sorting-icon */
 
-.icone-up {
-  fill: var(--special-icone-dir);
+.sorting-icon {
+  margin-right: 73px;
+  margin-top: 5px;
 }
 
-.icone-up:hover {
+.icon-up {
+  padding-left: 10px;
+  fill: var(--special-sorting-icone);
+}
+
+.icon-up:hover {
   fill: var(--basic-black);
 }
 
-.icone-up:focus,
-.icone-up:active {
-  fill: var(--basic-light-sky);
-}
-
-.icone-down {
+.icon-up:focus,
+.icon-up:active {
   fill: var(--basic-light-sky);
 }
 
@@ -469,14 +486,29 @@ img {
 
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item {
-  display: grid;
-  grid-template-columns: 135px auto max-content;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  
   border-bottom: 1px solid var(--basic-border-pepel);
+}
+
+.catalog-item-image {
+  width: 135px;
+  height: 90px;
+  margin-left: 73px;
+  margin-right: 29px;
+  margin-bottom: 30px;
+}
+
+.catalog-item-product {
+  flex-grow: 1;
+  margin-bottom: 15px;
 }
 
 .heading a {
@@ -499,6 +531,11 @@ img {
 .catalog-item span {
  color: var(--special-rating);
  background-color: var(--special-bg-rating);
+}
+
+.catalog-item-rating {
+  margin-right: 73px;
+  margin-bottom: 30px;
 }
 
 /* Main-footer */
