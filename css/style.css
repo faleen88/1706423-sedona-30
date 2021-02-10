@@ -527,7 +527,6 @@ img {
   display: flex;
   align-items: flex-end;
   height: 150px;
-  
   border-bottom: 1px solid var(--basic-border-pepel);
 }
 
@@ -562,13 +561,31 @@ img {
 }
 
 .catalog-item span {
- color: var(--special-rating);
- background-color: var(--special-bg-rating);
+  color: var(--special-rating);
+  background-color: var(--special-bg-rating);
 }
 
 .catalog-item-rating {
   margin-right: 73px;
   margin-bottom: 30px;
+}
+
+.stars {
+  width: 91px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  background-repeat: space;
+  margin-bottom: 50px;
+}
+
+.stars3 {
+  width: 66px;
+  margin-left: 25px;
+}
+
+.stars2 {
+  width: 42px;
+  margin-left: 49px;
 }
 
 /* Main-footer */
