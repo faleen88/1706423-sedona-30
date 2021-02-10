@@ -86,7 +86,29 @@ img {
 }
 
 .site-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-nav-info,
+.site-nav-media {
+  text-align: left;
+}
+
+.site-nav-map,
+.site-nav-current {
+  text-align: right;
+}
+
+.site-nav-info {
+  padding-left: 73px;
+}
+
+.site-nav-current {
+  padding-right: 73px;
 }
 
 .site-nav a {
@@ -566,6 +588,7 @@ img {
 /* Social button */
 
 .social-list {
+  display: flex;
   list-style: none;
 }
 
