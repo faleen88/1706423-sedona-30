@@ -88,6 +88,12 @@ img {
 
 /* Main-header */
 
+/* main-header-logo */
+
+.main-header-logo {
+  position: absolute;
+  margin-left: -69px;
+}
 
 /* Main-nav */
 
@@ -101,6 +107,8 @@ img {
 .site-nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  min-height: 56px;
   margin: 0;
   padding: 0;
   list-style: none;
