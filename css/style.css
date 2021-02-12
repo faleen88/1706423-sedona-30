@@ -612,9 +612,13 @@ img {
 /* Main-footer */
 
 .main-footer {
+  position: relative;
+  margin-top: -60px;
   display: flex;
   justify-content: space-between;
   min-height: 120px;
+  background-color: var(--basic-white);
+  opacity: 0.9;
 }
 
 /* Contacts */
