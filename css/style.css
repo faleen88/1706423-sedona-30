@@ -183,7 +183,7 @@ img {
 }
 
 .shape {
-  background-image: url(../img/shape.png);
+  background-image: url(../img/shape.svg);
   background-repeat:no-repeat;
   background-position: bottom ;
   width: 1200px;
@@ -493,7 +493,42 @@ img {
 }
 
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.filter-option {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  padding-left: 39px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
 }
 
 /* Catalog */
@@ -659,7 +694,6 @@ img {
 
 .main-footer {
   position: relative;
-  margin-top: -60px;
   display: flex;
   justify-content: space-between;
   min-height: 120px;
