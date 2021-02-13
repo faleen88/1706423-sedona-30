@@ -281,6 +281,10 @@ img {
 
 /* Search */
 
+.search {
+  margin: 58px auto 4px;
+}
+
 .search span {
   font-size: 30px;
   line-height: 24px;
@@ -291,6 +295,32 @@ img {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 568px;
+  height: 481px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 458px;
+  height: 38px;
+}
+
+.search-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .search-item label {
@@ -306,6 +336,7 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-pepel);
   border: none;
+  box-sizing: border-box;
 }
 
 .search-item input:hover {
@@ -318,13 +349,30 @@ img {
   outline: none;
 }
 
+.search-item-date {
+  width: 346px;
+  height: 38px;
+}
+
+.search-item-people {
+  width: 114px;
+  height: 38px;
+  text-align: center;
+}
+
 /* Button */
 
 .button-popap {
+  display: inline-block;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 568px;
+  height: 86px;
   color: var(--basic-white);
+  vertical-align: middle;
   background-color: var(--basic-light-ground);
 }
 
@@ -337,10 +385,12 @@ img {
 }
 
 .button-search {
-  font: inherit;
+  display: inline-block;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  width: 458px;
+  height: 58px;
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--basic-light-sky);
@@ -444,10 +494,6 @@ img {
 
 .filter ul {
   list-style: none;
-}
-
-.filter-checkbox {
-  margin-left: -40px;
 }
 
 /* Catalog */
