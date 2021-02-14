@@ -367,8 +367,6 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
   width: 568px;
   height: 86px;
   color: var(--basic-white);
@@ -418,6 +416,7 @@ img {
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  margin-left: 85px;
 }
 
 .filter-button:hover {
@@ -426,6 +425,12 @@ img {
 }
 
 .button-product {
+  display: inline-block;
+  margin-top: 15.5px;
+  margin-right: 6px;
+  width: 110px;
+  height: 27px;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-light-sky);
 }
@@ -439,6 +444,11 @@ img {
 }
 
 .button-reservation {
+  display: inline-block;
+  margin-top: 15.5px;
+  width: 142px;
+  height: 27px;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-light-ground);
 }
@@ -531,6 +541,73 @@ img {
   background-image: url(../img/checkbox-on.svg);
 }
 
+.price-controls {
+  display: flex;
+  width: 313px;
+  height: 32px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  margin-top: 10.5px;
+}
+
+.price-controls input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: var(--basic-white);
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price-controls input::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+}
+
+.range-controls {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.range-controls .scale {
+  width: 316px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 252px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -8.5px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 7.5px solid var(--basic-white);
+  background-color: rgb(171, 171, 171);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.2);
+}
+
+.range-controls .toggle-max {
+  left: 252px;
+}
+
 /* Catalog */
 
 /* Sorting */
@@ -538,7 +615,7 @@ img {
 .sorting {
   display: flex;
   align-items: center;
-  height: 86px;
+  padding: 29px 73px 31px;
   border-bottom: 1px solid var(--basic-border-pepel);
 }
 
@@ -546,7 +623,6 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-left: 73px;
   margin-right: 46px;
 }
 
@@ -554,14 +630,14 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin: 0;
   margin-right: 40px;
-  margin-top: 5px;
 }
 
 .sorting-list {
   display: flex;
   flex-grow: 1;
-  margin-top: 5px;
+  margin: 0;
   padding: 0;
   list-style: none;
   font-size: 12px;
@@ -592,16 +668,11 @@ img {
   opacity: 1;
 }
 
-.sorting-current {
+.sorting-item-current {
   color: var(--basic-light-sky);
 }
 
 /* Sorting-icon */
-
-.sorting-icon {
-  margin-right: 73px;
-  margin-top: 5px;
-}
 
 .icon-up {
   padding-left: 10px;
@@ -628,21 +699,32 @@ img {
 .catalog-item {
   display: flex;
   align-items: flex-end;
-  height: 150px;
+  padding: 24px 73px 30px;
   border-bottom: 1px solid var(--basic-border-pepel);
 }
 
 .catalog-item-image {
   width: 135px;
   height: 90px;
-  margin-left: 73px;
   margin-right: 29px;
-  margin-bottom: 30px;
+  order: -1;
 }
 
 .catalog-item-product {
   flex-grow: 1;
-  margin-bottom: 15px;
+}
+
+.heading,
+.catalog-item-product p {
+  margin: 0;
+}
+
+.heading {
+  margin-bottom: 7px;
+}
+
+.catalog-item-product span {
+  margin-right: 9px;
 }
 
 .heading a {
@@ -662,14 +744,13 @@ img {
   opacity: 0.3;
 }
 
-.catalog-item span {
+.catalog-item-rating span {
+  display: block;
+  width: 110px;
+  height: 27px;
+  text-align: center;
   color: var(--special-rating);
   background-color: var(--special-bg-rating);
-}
-
-.catalog-item-rating {
-  margin-right: 73px;
-  margin-bottom: 30px;
 }
 
 .stars {
@@ -693,12 +774,16 @@ img {
 /* Main-footer */
 
 .main-footer {
-  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 120px;
   background-color: var(--basic-white);
   opacity: 0.9;
+}
+
+.footer-main-page {
+  position: relative;
+  margin-top: -120px;s
 }
 
 /* Contacts */
