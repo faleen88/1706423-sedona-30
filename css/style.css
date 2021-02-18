@@ -504,9 +504,11 @@ img {
 }
 
 .button-product {
-  display: inline-block;
-  margin-top: 15.5px;
-  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 3px;
   width: 110px;
   height: 27px;
   text-align: center;
@@ -523,8 +525,10 @@ img {
 }
 
 .button-reservation {
-  display: inline-block;
-  margin-top: 15.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
   width: 142px;
   height: 27px;
   text-align: center;
@@ -571,7 +575,7 @@ img {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 26px;
   border: none;
 }
 
@@ -588,8 +592,7 @@ img {
 }
 
 .filter-option {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 25px;
   padding-left: 39px;
 }
 
@@ -626,11 +629,10 @@ img {
   height: 32px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
-  margin-top: 10.5px;
+  margin-top: 12px;
 }
 
 .price-controls input {
-  position: relative;
   background-color: transparent;
   border: none;
   color: var(--basic-white);
@@ -641,12 +643,9 @@ img {
   text-transform: uppercase;
 }
 
-.price-controls input::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 22px;
-  background-color: var(--basic-white);
+.price-controls svg {
+  margin-top: 5px;
+  margin-left: 7px;
 }
 
 .range-controls {
@@ -778,7 +777,7 @@ img {
 .catalog-item {
   display: flex;
   align-items: flex-end;
-  padding: 24px 73px 30px;
+  padding: 24.5px 73px 30px;
   border-bottom: 1px solid var(--basic-border-pepel);
 }
 
@@ -802,8 +801,10 @@ img {
   margin-bottom: 7px;
 }
 
-.catalog-item-product span {
-  margin-right: 9px;
+.catalog-item-product span:first-of-type {
+  display: inline-block;
+  width: 110px;
+  margin-right: 3px;
 }
 
 .heading a {
@@ -824,7 +825,9 @@ img {
 }
 
 .catalog-item-rating span {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 110px;
   height: 27px;
   text-align: center;
@@ -837,17 +840,16 @@ img {
   height: 17px;
   background-image: url(../img/star.svg);
   background-repeat: space;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
+  margin-left: auto;
 }
 
 .stars3 {
   width: 66px;
-  margin-left: 25px;
 }
 
 .stars2 {
   width: 42px;
-  margin-left: 49px;
 }
 
 /* Main-footer */
