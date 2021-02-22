@@ -525,6 +525,11 @@ img {
   background-color: var(--basic-white);
 }
 
+.filter-button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
 .button-product {
   display: inline-flex;
   align-items: center;
@@ -645,6 +650,12 @@ img {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after {
+  border-color: var(--basic-black);
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .price-controls {
@@ -800,7 +811,10 @@ img {
   fill: var(--basic-black);
 }
 
-.icon-up:focus,
+.icon-up:focus {
+  fill: var(--basic-light-sky);
+}
+
 .icon-up:active {
   fill: var(--basic-light-sky);
 }
@@ -1004,3 +1018,8 @@ img {
 .logo-icone:active {
   fill: var(--special-pepel);
 }
+
+.logo-icone:focus {
+  border-color: var(--basic-black);
+  outline: 5px auto -webkit-focus-ring-color;
+  }
