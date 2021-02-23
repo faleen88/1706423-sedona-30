@@ -34,7 +34,6 @@
 
 --special-black: #231F20;
 --special-pepel: #BDBBBC;
---special-background: #808080;
 --special-sorting-icone: #CACACA;
 --special-rating: #666666;
 --special-bg-rating: #F2F2F2;
@@ -166,7 +165,7 @@ img {
 /* Invitation */
 
 .invitation {
-  background-color: var(--special-background);
+  background-color: var(--basic-light-sky);
   width: 1200px;
   height: 508px;
 }
@@ -314,7 +313,7 @@ img {
 /* Search */
 
 .search {
-  margin: 56px auto 0;
+  margin: 53px auto 0;
 }
 
 .search span {
@@ -401,18 +400,6 @@ img {
   padding: 6px 9px 6px 12px;
 }
 
-.search-item svg {
-  fill: var(--special-search-icon);
-}
-
-.search-item svg:hover {
-  fill: var(--basic-black);
-}
-
-.search-item svg:active {
-  fill: var(--basic-light-sky);
-}
-
 .search-item-adults label {
   margin-right: 38px;
 }
@@ -434,26 +421,51 @@ img {
   text-align: center;
 }
 
+.button-search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .icon-calendar {
   position: absolute;
-  right: 9px;
+  top: 0;
+  right: 0;
 }
 
 .icon-minus {
   position: absolute;
-  left: 13px;
-  top: 18px;
+  left: 0;
+  top: 0;
 }
 
 .icon-plus {
   position: absolute;
-  right: 13px;
-  top: 14px;
+  right: 0;
+  top: 0;
+}
+
+.button-search-icon svg {
+  fill: var(--special-search-icon);
+}
+
+.button-search-icon:hover  svg{
+  fill: var(--basic-black);
+}
+
+.button-search-icon:active svg {
+  fill: var(--basic-light-sky);
 }
 
 /* Map */
 
 .map iframe {
+  display: block;
   border: none;
   width: 1199px;
   height: 594px;
@@ -578,7 +590,7 @@ img {
 /* Filters */
 
 .filters {
-  background-color: var(--special-background);
+  background-color: var(--basic-light-sky);
   color: var(--basic-white);
   width: 1200px;
   height: 217px;
@@ -762,6 +774,7 @@ img {
 
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   margin: 0;
   padding: 0;
@@ -771,8 +784,11 @@ img {
   line-height: 18px;
 }
 
+.sorting-item {
+  margin-right: 33px;
+}
+
 .sorting-list a {
-  margin-left: 33px;
   color: var(--basic-black);
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-light-sky);
