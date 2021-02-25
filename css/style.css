@@ -13,8 +13,8 @@
     src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
          url("../fonts/PTSans-Bold.woff") format("woff");
     font-weight: 700;
-    font-style: normal;  
-}  
+    font-style: normal;
+}
 
 /* Variables */
 
@@ -54,7 +54,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: var(--basic-white);
-  
+
 
   min-height: 100%;
   display: grid;
@@ -65,7 +65,7 @@
 a {
   text-decoration: none;
 }
-  
+
 img {
   max-width: 100%;
   height: auto;
@@ -211,7 +211,7 @@ img {
 
 /* Advantages-1-2 */
 
-.advantage1, 
+.advantage1,
 .advantage2 {
   color: var(--basic-white);
   background-color: var(--basic-light-sky);
@@ -314,6 +314,8 @@ img {
 
 .search {
   margin: 53px auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 .search span {
@@ -328,6 +330,13 @@ img {
   line-height: 24px;
   font-weight: 400;
   margin: 29px auto 43px;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  left: 316px;
+  z-index: -1;
 }
 
 .search-form {
@@ -460,6 +469,11 @@ img {
 
 .button-search-icon:active svg {
   fill: var(--basic-light-sky);
+}
+
+.search-show {
+  display: block;
+  animation: move-down 1s;
 }
 
 /* Map */
@@ -1038,4 +1052,18 @@ img {
 .logo-icone:focus {
   border-color: var(--basic-black);
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Animations */
+
+@keyframes move-down {
+  from {
+    transform: translateY(-395px);
+
   }
+
+  to {
+    transform: translateY(0);
+
+  }
+}
