@@ -36,7 +36,6 @@
 --special-pepel: #BDBBBC;
 --special-sorting-icone: #CACACA;
 --special-rating: #666666;
---special-bg-rating: #F2F2F2;
 --special-search-icon: #A9A9A9;
 }
 
@@ -53,8 +52,7 @@
   color: var(--basic-black);
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--basic-white);
-
+  background-color: var(--basic-light-pepel);
 
   min-height: 100%;
   display: grid;
@@ -86,6 +84,13 @@ img {
 
 .page {
   height: 100%;
+}
+
+.shadow {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Main-header */
@@ -159,7 +164,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  background-color: var(--basic-white);
 }
 
 /* Invitation */
@@ -314,8 +319,6 @@ img {
 
 .search {
   margin: 53px auto 0;
-  position: relative;
-  z-index: 1;
 }
 
 .search span {
@@ -332,11 +335,10 @@ img {
   margin: 29px auto 43px;
 }
 
+/* Form */
+
 .form-popup {
   display: none;
-  position: absolute;
-  left: 316px;
-  z-index: -1;
 }
 
 .search-form {
@@ -477,6 +479,11 @@ img {
 }
 
 /* Map */
+
+.map {
+  position: relative;
+  overflow: hidden;
+}
 
 .map iframe {
   display: block;
@@ -685,7 +692,6 @@ img {
 }
 
 .price-controls {
-  display: flex;
   width: 313px;
   height: 32px;
   border: 2px solid var(--basic-white);
@@ -694,21 +700,18 @@ img {
   position: relative;
 }
 
+.price-controls label {
+  padding-left: 65px ;
+}
+
 .price-controls input {
   background-color: transparent;
   border: none;
   color: var(--basic-white);
   margin: 0;
+  margin-top: 7px;
   padding: 0;
-  padding-left: 4px;
-  padding-bottom: 2px;
-  width: 150px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.price-controls .max-price {
-  padding-left: 9px;
+  width: 58px;
 }
 
 .price-controls::after {
@@ -753,6 +756,7 @@ img {
 
 .range-controls .toggle:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .range-controls .toggle-max {
@@ -915,7 +919,7 @@ img {
   height: 27px;
   text-align: center;
   color: var(--special-rating);
-  background-color: var(--special-bg-rating);
+  background-color: var(--basic-light-pepel);
 }
 
 .stars {
@@ -941,14 +945,18 @@ img {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  width: 1200px;
   height: 120px;
+  margin: 0 auto;
+  padding: 0;
   background-color: var(--basic-white);
-  opacity: 0.9;
 }
 
 .footer-main-page {
   position: relative;
   margin-top: -120px;
+  opacity: 0.9;
 }
 
 /* Contacts */
