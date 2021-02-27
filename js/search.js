@@ -8,11 +8,15 @@ searchLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   searchPopup.classList.toggle('search-show');
   searchDateArrival.focus();
+  searchPopup.classList.remove('search-error');
 });
 
 searchForm.addEventListener('submit', function (evt) {
   if (!searchDateArrival.value || !searchDateDeparture.value) {
     evt.preventDefault();
+    searchPopup.classList.remove("search-error");
+    searchPopup.offsetWidth = searchPopup.offsetWidth;
+    searchPopup.classList.add('search-error');
   }
 });
 
@@ -21,8 +25,7 @@ window.addEventListener('keydown', function (evt) {
     if (searchPopup.classList.contains('search-show')) {
       evt.preventDefault();
       searchPopup.classList.remove('search-show');
+      searchPopup.classList.remove('search-error');
     }
   }
 });
-
-localStorage.removeItem('adults', searchDateArrival.value);

@@ -478,6 +478,10 @@ img {
   animation: move-down 1s;
 }
 
+.search-error {
+  animation: shake 1s;
+}
+
 /* Map */
 
 .map {
@@ -683,6 +687,26 @@ img {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:not(:checked):disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off-dis.svg);
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on-dis.svg);
 }
 
 .filter-input-checkbox:focus + label::before,
@@ -1073,5 +1097,27 @@ img {
   to {
     transform: translateY(0);
 
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
