@@ -308,7 +308,7 @@ img {
 .advantage h3,
 .advantage-item h3 {
   font-size: 21px;
-  margin: 0 76px;
+  margin: 0 75px;
 }
 
 .advantage2 h3 {
@@ -422,6 +422,7 @@ img {
 .search-item-adults div,
 .search-item-children div {
   display: inline-block;
+  vertical-align: center;
   position: relative;
 }
 
@@ -521,6 +522,7 @@ img {
 
 .button-search {
   display: inline-block;
+  vertical-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -914,6 +916,7 @@ img {
 
 .catalog-item-product span:first-of-type {
   display: inline-block;
+  vertical-align: center;
   width: 110px;
   margin-right: 3px;
 }
@@ -1058,18 +1061,16 @@ img {
 
 .footer-copyright span {
   display: inline-block;
+  vertical-align: center;
   margin-left: 65px;
   margin-top: 51px;
-}
-
-.login-link {
-  position: relative;
+  margin-right: 5px;
 }
 
 .logo-icone {
-  position: absolute;
-  left: 8px;
-  top: -15px;
+  position: relative;
+  left: 0;
+  top: 13px;
   fill: var(--special-black);
 }
 
@@ -1079,11 +1080,6 @@ img {
 
 .logo-icone:active {
   fill: var(--special-pepel);
-}
-
-.logo-icone:focus {
-  border-color: var(--basic-black);
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 /* Animations */
