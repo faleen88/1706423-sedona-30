@@ -7,7 +7,6 @@ const searchDateDeparture = searchPopup.querySelector('.date-of-departure-input'
 searchLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   searchPopup.classList.toggle('search-show');
-  searchDateArrival.focus();
   searchPopup.classList.remove('search-error');
 });
 

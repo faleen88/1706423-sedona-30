@@ -44,7 +44,7 @@
 .page-body {
   min-width: 1200px;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -488,6 +488,9 @@ img {
 .map {
   position: relative;
   overflow: hidden;
+  background-image: url(../img/map.png);
+  width: 1199px;
+  height: 594px;
 }
 
 .map iframe {
@@ -620,14 +623,12 @@ img {
   background-color: var(--basic-light-sky);
   color: var(--basic-white);
   width: 1200px;
-  height: 217px;
 }
 
 .image {
   background-image: url(../img/background.png);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 1200px;
-  height: 217px;
 }
 
 .filter {
@@ -711,8 +712,8 @@ img {
   background-image: url(../img/checkbox-on-dis.svg);
 }
 
-.filter-input-checkbox:focus + label::before,
-.filter-input-checkbox:focus + label::after {
+.filter-input-checkbox:focus-visible + label::before,
+.filter-input-checkbox:focus-visible + label::after {
   border-color: var(--basic-black);
   outline: 5px auto -webkit-focus-ring-color;
 }

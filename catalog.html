@@ -16,12 +16,12 @@
     <div class="shadow">
       <header class="main-header">
         <nav class="main-nav container">
-          <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo" href="index.html" tabindex="3">
             <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона, ссылка на главную страницу">
           </a>
           <ul class="site-nav">
-            <li class="site-nav-item site-nav-info"><a href="#">Информация</a></li>
-            <li class="site-nav-item site-nav-media"><a href="#">Фото и видео</a></li>
+            <li class="site-nav-item site-nav-info"><a href="#" tabindex="1">Информация</a></li>
+            <li class="site-nav-item site-nav-media"><a href="#" tabindex="2">Фото и видео</a></li>
             <li class="site-nav-item site-nav-map"><a href="#">Карта штата</a></li>
             <li class="site-nav-item site-nav-current">Гостиницы</li>
           </ul>
@@ -87,7 +87,7 @@
                   <div class="toggle toggle-min" tabindex="0"></div>
                   <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
-                <button class="filter-button" type="submit">Показать</button>
+                <button class="filter-button" type="submit" aria-label="Показать варианты гостиниц">Показать</button>
             </fieldset>
             </form>
           </div>
@@ -104,12 +104,12 @@
               <li class="sorting-item sorting-item-rating"><a href="#">По рейтингу</a></li>
             </ul>
             <div class="sorting-icon">
-              <a href="#">
+              <a href="#" aria-label="Расположить в порядке возрастания">
                 <svg class="icon-up" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
               </a>
-              <a href="#">
+              <a href="#" aria-label="Расположить в порядке убывания">
                 <svg class="icon-up" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11"/>
                 </svg>
@@ -119,14 +119,14 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-product">
-                <h3 class="heading"><a href="#">Amara resort & spa</a></h3>
+                <h3 class="heading"><a href="#" aria-label="Ссылка на гостиницу Amara resort & spa">Amara resort & spa</a></h3>
                 <p>
                   <span>Гостиница</span>
                   <span>от 4000 р.</span>
                 </p>
                 <p>
                   <a class="button-product" href="#" aria-label="Перейти на страницу гостиницы Amara resort & spa">Подробнее</a>
-                  <a class="button-reservation" href="#">Забронировать</a>
+                  <a class="button-reservation" href="#" aria-label="Забронировать номер">Забронировать</a>
                 </p>
               </div>
               <img class="catalog-item-image" src="img/hotel.jpg" width="135" height="90" alt="Прогулочные дорожки гостиницы с видом на лес и скалы">
@@ -137,14 +137,14 @@
             </li>
             <li class="catalog-item">
               <div class="catalog-item-product">
-                <h3 class="heading"><a href="#">Desert quail inn</a></h3>
+                <h3 class="heading"><a href="#" aria-label="Ссылка на мщтель Desert quail inn">Desert quail inn</a></h3>
                 <p>
                   <span>Мотель</span>
                   <span>от 3000 р.</span>
                 </p>
                 <p>
                   <a class="button-product" href="#" aria-label="Перейти на страницу мотеля Desert quail inn">Подробнее</a>
-                  <a class="button-reservation" href="#">Забронировать</a>
+                  <a class="button-reservation" href="#" aria-label="Забронировать номер">Забронировать</a>
                 </p>
               </div>
               <img class="catalog-item-image" src="img/motel.jpg" width="135" height="90" alt="Здание мотеля с порковочной площадкой">
@@ -155,14 +155,14 @@
             </li>
             <li class="catalog-item">
               <div class="catalog-item-product">
-                <h3 class="heading"><a href="#">Villas at poco diablo</a></h3>
+                <h3 class="heading"><a href="#" aria-label="Ссылка на апартаменты Villas at poco diablo">Villas at poco diablo</a></h3>
                 <p>
                   <span>Апартаменты</span>
                   <span>от 2000 р.</span>
                 </p>
                 <p>
                   <a class="button-product" href="#" aria-label="Перейти на страницу апартаментов Villas at poco diablo">Подробнее</a>
-                  <a class="button-reservation" href="#">Забронировать</a>
+                  <a class="button-reservation" href="#" aria-label="Забронировать номер">Забронировать</a>
                 </p>
               </div>
               <img class="catalog-item-image" src="img/apartments.jpg" width="135" height="90" alt="Небольшие домики среди деревьев">
@@ -181,7 +181,7 @@
           <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <p><a href="#">#Visitsedona</a></p>
-            <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+            <p>ТЕЛ: <a href="tel:+74956660166" aria-label="Телефон для связи +7(495) 666-01-66">+7(495) 666-01-66</a></p>
           </section>
 
           <section class="socials">
